@@ -6196,7 +6196,7 @@ GameObject:
   - component: {fileID: 4135590632968025610}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6612,7 +6612,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010001010101000001000001010101010101010101
-        actionIsOpen: 00000000000000000000000000000000000000000001
+        actionIsOpen: 00000000000000000000000000000000000100000001
         actionStartIndex: 0000000002000000090000001000000015000000160000001b000000200000002a00000033000000380000003e000000470000004c00000051000000560000005d0000006400000066000000670000006b0000006f000000
         actionHashCodes: 5ac85204b691f703b691f70311839a0078c530010cdb04050cdb0405b0327400979e4104f5ce2c01a7550203febdb40111839a0011839a0011839a005552ad051bcdca045ac8520478c530012a6e8a000c8bc1001bcdca04
         unityObjectParams: []
@@ -9990,7 +9990,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: -0.05
+          value: -0.03
         - useVariable: 0
           name: 
           tooltip: 

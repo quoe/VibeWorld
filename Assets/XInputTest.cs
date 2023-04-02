@@ -35,7 +35,6 @@ public class XInputTest : MonoBehaviour
     {
         // SetVibration should be sent in a slower rate.
         // Set vibration according to triggers
-
         if (!VibrateOn)
         {
             SetVibrationLeft = 0;
@@ -148,14 +147,14 @@ public class XInputTest : MonoBehaviour
 
     void OnGUI()
     {
-        string text = "Use left stick to turn the cube, hold A to change color\n";
-        text += string.Format("IsConnected {0} Packet #{1}\n", state.IsConnected, state.PacketNumber);
-        text += string.Format("\tTriggers {0} {1}\n", state.Triggers.Left, state.Triggers.Right);
-        text += string.Format("\tD-Pad {0} {1} {2} {3}\n", state.DPad.Up, state.DPad.Right, state.DPad.Down, state.DPad.Left);
-        text += string.Format("\tButtons Start {0} Back {1} Guide {2}\n", state.Buttons.Start, state.Buttons.Back, state.Buttons.Guide);
-        text += string.Format("\tButtons LeftStick {0} RightStick {1} LeftShoulder {2} RightShoulder {3}\n", state.Buttons.LeftStick, state.Buttons.RightStick, state.Buttons.LeftShoulder, state.Buttons.RightShoulder);
-        text += string.Format("\tButtons A {0} B {1} X {2} Y {3}\n", state.Buttons.A, state.Buttons.B, state.Buttons.X, state.Buttons.Y);
-        text += string.Format("\tSticks Left {0} {1} Right {2} {3}\n", state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y, state.ThumbSticks.Right.X, state.ThumbSticks.Right.Y);
+        string text = "Левый стик X, Y Axis - перемещение  \nПравый триггер RT (10 Axis) - собственная вибрация (правого мотора) и увеличение размера  \nЛевый триггер LT (9 Axis) - собственное уменьшение (небольшая вибрация левого мотора)  \nПравый стик 4, 5 Axis - изменение вида (ближе/дальше)  \nКнопка A - изменить цвет  \nОкружение вибрирует левым мотором с разной силой. Для прохождения надо входить с ним в резонанс,\nчтобы вибрация левого мотора и правого совпадали. Но делать под ситуацию. \nНа собственную вибрацию расходуется энергия. Можно пополнять энергию от резонанса с окружением,\nлибо находясь рядом с вибрирующими объектами. Но некоторые из них могут наоборот забирать энергию. \n";
+        text += string.Format("Джойстик {0} Пакет #{1}\n", state.IsConnected, state.PacketNumber);
+        text += string.Format("  Триггеры {0} {1}\n", state.Triggers.Left, state.Triggers.Right);
+        text += string.Format("  D-Pad {0} {1} {2} {3}\n", state.DPad.Up, state.DPad.Right, state.DPad.Down, state.DPad.Left);
+        text += string.Format("  Кнопка Старта {0} Назад {1} Обзор {2}\n", state.Buttons.Start, state.Buttons.Back, state.Buttons.Guide);
+        text += string.Format("  Кнопки левого Стика {0} Правого Стика {1} Левый Бампер {2} Правый Бампер {3}\n", state.Buttons.LeftStick, state.Buttons.RightStick, state.Buttons.LeftShoulder, state.Buttons.RightShoulder);
+        text += string.Format("  Кнопки A {0} B {1} X {2} Y {3}\n", state.Buttons.A, state.Buttons.B, state.Buttons.X, state.Buttons.Y);
+        text += string.Format("  Левый Стик {0} {1} Правый {2} {3}\n", state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y, state.ThumbSticks.Right.X, state.ThumbSticks.Right.Y);
         GUI.Label(new Rect(0, 0, Screen.width, Screen.height), text);
     }
 

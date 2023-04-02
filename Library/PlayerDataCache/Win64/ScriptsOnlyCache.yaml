@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - HutongGames.PlayMakerEditor.FsmComponentInspector
     - HutongGames.PlayMakerEditor.FsmEditorWindow
     - HutongGames.PlayMakerEditor.FsmLogWindow
+    - PlayMakerEventProxyEditor
     Assembly-CSharp.dll:
     - XInputTest
     PlayMaker.dll:
@@ -57,9 +58,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 12988}
     - Class: 114
       Script: {instanceID: 13012}
     - Class: 114
@@ -67,7 +68,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13016}
     - Class: 114
-      Script: {instanceID: 13022}
+      Script: {instanceID: 13018}
     - Class: 114
       Script: {instanceID: 16520}
     - Class: 115
@@ -87,6 +88,12 @@ ScriptsOnlyBuild:
     - Class: 199
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 9b8a30b0d2b39397e408f051bc054940
+    assemblyName: PlayMaker.dll
+    namespaceName: 
+    className: PlayMakerLateUpdate
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -561,12 +568,6 @@ ScriptsOnlyBuild:
     assemblyName: PlayMaker.dll
     namespaceName: 
     className: PlayMakerJointBreak2D
-  - hash:
-      serializedVersion: 2
-      Hash: 9b8a30b0d2b39397e408f051bc054940
-    assemblyName: PlayMaker.dll
-    namespaceName: 
-    className: PlayMakerLateUpdate
   - hash:
       serializedVersion: 2
       Hash: 9b8a30b0d2b39397e408f051bc054940

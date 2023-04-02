@@ -280,8 +280,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 217
-        y: 95
+        x: 215
+        y: 104
         width: 111
         height: 32
       isBreakpoint: 0
@@ -302,16 +302,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetDistance
         - HutongGames.PlayMaker.Actions.FloatCompare
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.Comment
         - HutongGames.PlayMaker.Actions.SetFloatValue
         customNames:
         - 
         - 
         - 
+        - "\u042D\u0442\u043E \u0443\u0437\u043A\u043E\u0435 \u043C\u0435\u0441\u0442\u043E"
         - 
-        actionEnabled: 01010001
-        actionIsOpen: 01000001
-        actionStartIndex: 00000000040000000b0000000d000000
-        actionHashCodes: 36f094001bcdca045ac852049845b305
+        actionEnabled: 0101000101
+        actionIsOpen: 0000000001
+        actionStartIndex: 00000000040000000b0000000d0000000e000000
+        actionHashCodes: 36f094001bcdca045ac8520478c530019845b305
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -524,12 +526,13 @@ MonoBehaviour:
         - 
         - "\u0418\u0433\u0440\u043E\u043A \u0431\u043B\u0438\u0437\u043A\u043E"
         - 
+        - "\u041D\u043E \u0432\u0440\u043E\u0434\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442..)"
         byteData: 01010100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000000f000000010000000f0000000f0000000f0000001700000017000000170000000100000024000000010000000f0000000f00000001000000
+        paramDataType: 14000000130000000f000000010000000f0000000f0000000f000000170000001700000017000000010000002400000001000000030000000f0000000f00000001000000
         paramName:
         - gameObject
         - target
@@ -544,18 +547,19 @@ MonoBehaviour:
         - everyFrame
         - targetProperty
         - everyFrame
+        - comment
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000010000000200000003000000000000000100000002000000010000000000000002000000040000000500000003000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000001000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000000000001000000020000000300000000000000010000000200000001000000000000000200000003000000040000000500000003000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000000000000000000000000000001000000000000000100000000000000000000000000000001000000
     - name: "\u0418\u0433\u0440\u043E\u043A \u0431\u043B\u0438\u0437\u043A\u043E"
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 393
-        y: 99
+        x: 368
+        y: 81
         width: 113
         height: 48
       isBreakpoint: 0
@@ -626,7 +630,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101010100010101010101010101010101
-        actionIsOpen: 0100000000000000010000000001000100000000
+        actionIsOpen: 0100000100000100010000000001000100000000
         actionStartIndex: 0000000002000000070000000b00000012000000170000001c0000001f0000002100000023000000280000002f00000034000000360000003900000044000000460000004b0000005100000057000000
         actionHashCodes: da209704d339050536f094001bcdca040cdb04050cdb04059845b3055ac85204da20970411839a001bcdca040cdb040544e7c204ec7e3f035cfc9e03da2097040cdb0405dfd72a04a7550203afff1105
         unityObjectParams: []
@@ -1298,8 +1302,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 542
-        y: 100
+        x: 549
+        y: 83
         width: 125
         height: 48
       isBreakpoint: 0
@@ -1329,6 +1333,10 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.Comment
+        - HutongGames.PlayMaker.Actions.GetChild
+        - HutongGames.PlayMaker.Actions.DestroyObject
+        - HutongGames.PlayMaker.Actions.Comment
         - HutongGames.PlayMaker.Actions.SetEventFloatData
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -1339,19 +1347,44 @@ MonoBehaviour:
         - 
         - 
         - 
+        - "\u0423\u0431\u0440\u0430\u0442\u044C \u0437\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u0435
+          \u044D\u043D\u0435\u0440\u0433\u0438\u0435\u0439"
+        - 
+        - 
+        - "\u0421\u043E\u0431\u044B\u0442\u0438\u044F \u043F\u0440\u0438 \u0440\u0435\u0437\u043E\u043D\u0430\u043D\u0441\u0435"
         - 
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 010001010101000101
-        actionIsOpen: 000000010100000000
-        actionStartIndex: 000000000300000005000000090000000a0000000e00000013000000180000001c000000
-        actionHashCodes: 9845b3055ac852042a6e8a00d06b6e015e69bb04b2cf100073b31903a4c8bf00a4c8bf00
+        actionEnabled: 01000101010101010101000101
+        actionIsOpen: 00000000000000000000000000
+        actionStartIndex: 000000000300000005000000090000000a0000000e000000110000001200000013000000170000001c0000002100000025000000
+        actionHashCodes: 9845b3055ac852042a6e8a0078c53001184b57049ff80c0278c53001d06b6e015e69bb04b2cf100073b31903a4c8bf00a4c8bf00
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: PlayerEnergyCharger
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: PlayerEnergyCharger
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -1543,7 +1576,19 @@ MonoBehaviour:
             objectReferences: []
           setProperty: 1
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: PlayerEnergyCharge
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: PlayerEnergyCharge
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -1577,6 +1622,12 @@ MonoBehaviour:
           showInInspector: 1
           networkSync: 0
           value: 50
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: GiveEnergyToPlayer
           tooltip: "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u0430\u0441\u0442
@@ -1592,6 +1643,12 @@ MonoBehaviour:
           value: 0
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -1648,6 +1705,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
+        - Double-Click To Edit
+        - Double-Click To Edit
         - NewEnergy
         - "\u0421\u0442\u0430\u0442\u044C\u0412\u0438\u0434\u0438\u043C\u044B\u043C"
         - 
@@ -1658,7 +1717,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f0000000100000024000000010000000f0000000f00000001000000010000000f0000001f000000170000000f00000001000000140000001100000011000000010000000100000014000000110000001100000011000000110000001100000017000000170000000100000011000000170000001700000001000000
+        paramDataType: 0f0000000f0000000100000024000000010000000f0000000f00000001000000010000000300000014000000120000001200000013000000130000000f00000011000000030000000f0000001f000000170000000f00000001000000140000001100000011000000010000000100000014000000110000001100000011000000110000001100000017000000170000000100000011000000170000001700000001000000
         paramName:
         - floatVariable
         - floatValue
@@ -1669,6 +1728,15 @@ MonoBehaviour:
         - add
         - everyFrame
         - perSecond
+        - comment
+        - gameObject
+        - childName
+        - withTag
+        - storeResult
+        - gameObject
+        - delay
+        - detachChildren
+        - comment
         - floatData
         - eventTarget
         - sendEvent
@@ -1692,8 +1760,8 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 0000000001000000000000000000000001000000020000000300000002000000030000000400000000000000000000000500000004000000000000000000000001000000050000000600000001000000020000000300000004000000050000000600000001000000020000000700000007000000030000000400000008000000
-        paramByteDataSize: 0000000000000000010000000000000001000000000000000000000001000000010000000000000000000000000000000000000001000000000000000000000000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000
+        paramDataPos: 0000000001000000000000000000000001000000020000000300000002000000030000000000000000000000000000000100000000000000010000000400000000000000010000000500000000000000020000000600000004000000010000000100000002000000050000000600000002000000030000000400000005000000060000000700000003000000040000000700000008000000050000000600000008000000
+        paramByteDataSize: 0000000000000000010000000000000001000000000000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000
     - name: "\u0418\u0441\u0447\u0435\u0437\u0430\u0435\u0442"
       description: 
       colorIndex: 0
@@ -1718,16 +1786,26 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.DestroyComponent
         - HutongGames.PlayMaker.Actions.TweenFade
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 73d1f003
+        - 
+        actionEnabled: 0001
+        actionIsOpen: 0100
+        actionStartIndex: 0000000002000000
+        actionHashCodes: 9bd6f80173d1f003
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -1748,7 +1826,13 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: UnityEngine.Rigidbody
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -1778,7 +1862,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 3
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -1799,8 +1883,10 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000070000000f0000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 140000001200000014000000070000000f0000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
         paramName:
+        - gameObject
+        - component
         - gameObject
         - tweenDirection
         - value
@@ -1814,8 +1900,8 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 00000000000000000000000001000000000000000000000002000000000000000400000000000000080000000c0000000d000000
-        paramByteDataSize: 00000000040000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        paramDataPos: 000000000000000001000000000000000000000001000000000000000000000002000000000000000400000000000000080000000c0000000d000000
+        paramByteDataSize: 000000000000000000000000040000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
     - name: "\u041D\u0435\u0432\u0438\u0434\u0438\u043C"
       description: 
       colorIndex: 0
@@ -2094,6 +2180,9 @@ MonoBehaviour:
     - name: NewEnergy
       isSystemEvent: 0
       isGlobal: 1
+    - name: "\u0417\u0430\u0440\u044F\u0434\u0438\u0442\u044C \u0438\u0433\u0440\u043E\u043A\u0430"
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables:
@@ -2104,34 +2193,11 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: MaxVibrate
+        name: DistanceTolerance
         tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 1
-      - useVariable: 1
-        name: Vibrate
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
-      - useVariable: 1
-        name: VibrateForce
-        tooltip: "\u0423\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u0438\u043B\u0438
-          \u043E\u0441\u043B\u0430\u0431\u043B\u0435\u043D\u0438\u0435 \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u0438
-          \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438
-          \u043E\u0442 \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438"
         showInInspector: 1
         networkSync: 0
         value: 1
-      - useVariable: 1
-        name: VibrateFullForce
-        tooltip: "\u0418\u0442\u043E\u0433\u043E\u0432\u043E\u0435 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435
-          \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u0438 \u043E\u043A\u043E\u043B\u043E
-          \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438"
-        showInInspector: 0
-        networkSync: 0
-        value: 0
       - useVariable: 1
         name: DistanseToActivate
         tooltip: 
@@ -2139,15 +2205,16 @@ MonoBehaviour:
         networkSync: 0
         value: 5
       - useVariable: 1
-        name: stateTriggerRight
+        name: GiveEnergyToPlayer
+        tooltip: "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u0430\u0441\u0442
+          \u044D\u043D\u0435\u0440\u0433\u0438\u0438 \u0438\u0433\u0440\u043E\u043A\u0443"
+        showInInspector: 1
+        networkSync: 0
+        value: 50
+      - useVariable: 1
+        name: MaxVibrate
         tooltip: 
         showInInspector: 0
-        networkSync: 0
-        value: 0
-      - useVariable: 1
-        name: DistanceTolerance
-        tooltip: 
-        showInInspector: 1
         networkSync: 0
         value: 1
       - useVariable: 1
@@ -2173,12 +2240,34 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: GiveEnergyToPlayer
-        tooltip: "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u0430\u0441\u0442
-          \u044D\u043D\u0435\u0440\u0433\u0438\u0438 \u0438\u0433\u0440\u043E\u043A\u0443"
+        name: Vibrate
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: VibrateForce
+        tooltip: "\u0423\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u0438\u043B\u0438
+          \u043E\u0441\u043B\u0430\u0431\u043B\u0435\u043D\u0438\u0435 \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u0438
+          \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438
+          \u043E\u0442 \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438"
         showInInspector: 1
         networkSync: 0
-        value: 50
+        value: 1
+      - useVariable: 1
+        name: VibrateFullForce
+        tooltip: "\u0418\u0442\u043E\u0433\u043E\u0432\u043E\u0435 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435
+          \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u0438 \u043E\u043A\u043E\u043B\u043E
+          \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438"
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: stateTriggerRight
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables:
       - useVariable: 1
@@ -2251,6 +2340,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
+      - useVariable: 1
+        name: PlayerEnergyCharger
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables:
       - useVariable: 1
         name: PlayerXInput
@@ -2268,7 +2363,7 @@ MonoBehaviour:
       categories:
       - 
       - "\u0420\u0435\u0437\u043E\u043D\u0430\u043D\u0441"
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0434\u0438\u0441\u0442\u0430\u043D\u0446\u0438\u0438
       \u0438 \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u044F"
     docUrl: 
@@ -2278,7 +2373,7 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
-    outVariableIndices: 0400000009000000
+    outVariableIndices: 060000000a000000
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
