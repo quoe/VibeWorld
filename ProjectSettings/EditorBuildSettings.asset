@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VibeWorld.unity
     guid: a3640eb4fc6fff84eb58d19f87e205ac
+  - enabled: 1
+    path: Assets/VibeWorld_level2.unity
+    guid: b5042d1ddb7d9b541b2cb32e49996ec9
   m_configObjects: {}

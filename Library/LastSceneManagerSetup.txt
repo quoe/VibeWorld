@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/VibeWorld.unity
+- path: Assets/VibeWorld_level2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

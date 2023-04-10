@@ -10,6 +10,7 @@ public class XInputTest : MonoBehaviour
     public GamePadState state;
     GamePadState prevState;
     public bool VibrateOn;
+    public bool CanScale;
     public float stateTriggerRight;
     public float stateTriggerLeft;
     public float SetVibrationLeft;
@@ -29,6 +30,9 @@ public class XInputTest : MonoBehaviour
         NewScaleBase = 1.5f;
         NewScaleRandFix = 0.2f;
         NewMinScaleLimit = 0.2f;
+        SetVibrationLeft = 0;
+        SetVibrationRight = 0;
+        CanScale = true;
     }
 
     void FixedUpdate()
@@ -69,16 +73,16 @@ public class XInputTest : MonoBehaviour
             //В тоже время можно сделать игру сложнее и инетереснее, оставив. Или задать это настройками! 
             if (stateTriggerLeft < NewMinScaleLimit)
             {
-                GamePad.SetVibration(playerIndex, state.Triggers.Left, state.Triggers.Right);
+                GamePad.SetVibration(playerIndex, state.Triggers.Left, SetVibrationRight);
             }
             else
             {
-                GamePad.SetVibration(playerIndex, NewMinScaleLimit, state.Triggers.Right);
+                GamePad.SetVibration(playerIndex, NewMinScaleLimit, SetVibrationRight);
             }
         }
         else //Когда вибрацию задаёт внешняя среда, объекты, вибрируем правым самостоятельно, или левым
         {
-            GamePad.SetVibration(playerIndex, SetVibrationLeft, state.Triggers.Right);
+            GamePad.SetVibration(playerIndex, SetVibrationLeft, SetVibrationRight);
         }
     }
 
@@ -126,19 +130,22 @@ public class XInputTest : MonoBehaviour
             return; 
         }
 
-        float NewScale = NewScaleBase * stateTriggerRight;
-        float RandTriggerRight = Random.Range(0, stateTriggerRight) * NewScaleRandFix;
-        Vector3 NewScaleRand = new Vector3(RandTriggerRight, RandTriggerRight, RandTriggerRight);
-        transform.localScale = InitObjectScale + new Vector3(NewScale, NewScale, NewScale) + NewScaleRand;
+        if (CanScale)
+        {
+            float NewScale = NewScaleBase * stateTriggerRight;
+            float RandTriggerRight = Random.Range(0, stateTriggerRight) * NewScaleRandFix;
+            Vector3 NewScaleRand = new Vector3(RandTriggerRight, RandTriggerRight, RandTriggerRight);
+            transform.localScale = InitObjectScale + new Vector3(NewScale, NewScale, NewScale) + NewScaleRand;
 
-        //Уменьшение
-        if (stateTriggerLeft < NewMinScaleLimit)
-        {
-            transform.localScale = transform.localScale - new Vector3(stateTriggerLeft, stateTriggerLeft, stateTriggerLeft);
-        }
-        else
-        {
-            transform.localScale = transform.localScale - new Vector3(NewMinScaleLimit, NewMinScaleLimit, NewMinScaleLimit);
+            //Уменьшение
+            if (stateTriggerLeft < NewMinScaleLimit)
+            {
+                transform.localScale = transform.localScale - new Vector3(stateTriggerLeft, stateTriggerLeft, stateTriggerLeft);
+            }
+            else
+            {
+                transform.localScale = transform.localScale - new Vector3(NewMinScaleLimit, NewMinScaleLimit, NewMinScaleLimit);
+            }
         }
         
         // Make the current object turn
@@ -147,7 +154,7 @@ public class XInputTest : MonoBehaviour
 
     void OnGUI()
     {
-        string text = "Левый стик X, Y Axis - перемещение  \nПравый триггер RT (10 Axis) - собственная вибрация (правого мотора) и увеличение размера  \nЛевый триггер LT (9 Axis) - собственное уменьшение (небольшая вибрация левого мотора)  \nПравый стик 4, 5 Axis - изменение вида (ближе/дальше)  \nКнопка A - изменить цвет  \nОкружение вибрирует левым мотором с разной силой. Для прохождения надо входить с ним в резонанс,\nчтобы вибрация левого мотора и правого совпадали. Но делать под ситуацию. \nНа собственную вибрацию расходуется энергия. Можно пополнять энергию от резонанса с окружением,\nлибо находясь рядом с вибрирующими объектами. Но некоторые из них могут наоборот забирать энергию. \n";
+        string text = "Левый стик X, Y Axis - перемещение  \nПравый триггер RT (10 Axis) - собственная вибрация (правого мотора) и увеличение размера  \nЛевый триггер LT (9 Axis) - собственное уменьшение (небольшая вибрация левого мотора)  \nПравый стик 4, 5 Axis - пульсирующие вибрации \n(Вертикально - сила вибрации, Горизонтально - частота вибрации) \nКнопка A - изменить цвет  \nОкружение вибрирует левым мотором с разной силой. Для прохождения надо входить с ним в резонанс,\nчтобы вибрация левого мотора и правого совпадали. Но делать под ситуацию. \nНа собственную вибрацию расходуется энергия. Можно пополнять энергию от резонанса с окружением,\nлибо находясь рядом с вибрирующими объектами. Но некоторые из них могут наоборот забирать энергию. \n";
         text += string.Format("Джойстик {0} Пакет #{1}\n", state.IsConnected, state.PacketNumber);
         text += string.Format("  Триггеры {0} {1}\n", state.Triggers.Left, state.Triggers.Right);
         text += string.Format("  D-Pad {0} {1} {2} {3}\n", state.DPad.Up, state.DPad.Right, state.DPad.Down, state.DPad.Left);
