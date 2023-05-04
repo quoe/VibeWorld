@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/VibeWorldMenu.unity
+    guid: 23dd6bb7ce1f9f94a9c2efdeff7a45af
+  - enabled: 1
     path: Assets/VibeWorld.unity
     guid: a3640eb4fc6fff84eb58d19f87e205ac
   - enabled: 1

@@ -1264,16 +1264,16 @@ MonoBehaviour:
       isGlobal: 0
     - name: "\u0418\u0433\u0440\u043E\u043A \u0431\u043B\u0438\u0437\u043A\u043E"
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: "\u0420\u0435\u0437\u043E\u043D\u0430\u043D\u0441"
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: "\u0418\u0441\u0447\u0435\u0437"
       isSystemEvent: 0
       isGlobal: 0
     - name: "\u0418\u0433\u0440\u043E\u043A \u0434\u0430\u043B\u0435\u043A\u043E"
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:

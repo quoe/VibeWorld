@@ -4,7 +4,6 @@ ScriptsOnlyBuild:
     - HutongGames.PlayMakerEditor.EditorStartupPrefs
     - HutongGames.PlayMakerEditor.FsmActionWindow
     - HutongGames.PlayMakerEditor.FsmEditorWindow
-    - HutongGames.PlayMakerEditor.FsmLogWindow
     Assembly-CSharp.dll:
     - XInputTest
     PlayMaker.dll:
@@ -41,8 +40,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -56,19 +53,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 13020}
     - Class: 114
-      Script: {instanceID: 13014}
+      Script: {instanceID: 13024}
     - Class: 114
-      Script: {instanceID: 13016}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13018}
-    - Class: 114
-      Script: {instanceID: 16520}
+      Script: {instanceID: 16528}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -84,6 +79,41 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    Assets/VibeWorldMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11358}
+    - Class: 114
+      Script: {instanceID: 13022}
+    - Class: 114
+      Script: {instanceID: 13024}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     Assets/VibeWorld_level2.unity:
     - Class: 1
@@ -117,17 +147,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 13020}
     - Class: 114
-      Script: {instanceID: 13014}
+      Script: {instanceID: 13024}
     - Class: 114
-      Script: {instanceID: 13018}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 16520}
+      Script: {instanceID: 16528}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -143,12 +173,6 @@ ScriptsOnlyBuild:
     - Class: 199
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 9b8a30b0d2b39397e408f051bc054940
-    assemblyName: PlayMaker.dll
-    namespaceName: 
-    className: PlayMakerLateUpdate
   - hash:
       serializedVersion: 2
       Hash: a17f3cdaffefa864a0d800602bcf922d
@@ -623,6 +647,12 @@ ScriptsOnlyBuild:
     assemblyName: PlayMaker.dll
     namespaceName: 
     className: PlayMakerJointBreak2D
+  - hash:
+      serializedVersion: 2
+      Hash: 9b8a30b0d2b39397e408f051bc054940
+    assemblyName: PlayMaker.dll
+    namespaceName: 
+    className: PlayMakerLateUpdate
   - hash:
       serializedVersion: 2
       Hash: 9b8a30b0d2b39397e408f051bc054940
@@ -1327,6 +1357,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 19
   scenePathNames:
+  - Assets/VibeWorldMenu.unity
   - Assets/VibeWorld.unity
   - Assets/VibeWorld_level2.unity
   playerPath: D:/Disk_D/CODING/Unity3D_App/VibeWorld/EXE/Vibe World.exe

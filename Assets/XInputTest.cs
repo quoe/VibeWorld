@@ -82,6 +82,7 @@ public class XInputTest : MonoBehaviour
         }
         else //Когда вибрацию задаёт внешняя среда, объекты, вибрируем правым самостоятельно, или левым
         {
+            //Debug.Log(string.Format("GamePad SetVibrationLeft {0}", SetVibrationLeft));
             GamePad.SetVibration(playerIndex, SetVibrationLeft, SetVibrationRight);
         }
     }
